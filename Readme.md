@@ -1,55 +1,8 @@
-# Etherscan API
-
-## Development of a NEXTGEN Version has started - please stand by
-
-[![npm](https://img.shields.io/npm/dt/etherscan-api.svg)](https://www.npmjs.com/package/etherscan-api)
-[![license](https://img.shields.io/github/license/sebs/etherscan-api.svg)](https://github.com/sebs/etherscan-api/blob/master/LICENSE.md)
-[![GitHub tag](https://img.shields.io/github/tag/sebs/etherscan-api.svg)](https://github.com/sebs/etherscan-api)
-[![Travis](https://img.shields.io/travis/sebs/etherscan-api.svg)](https://travis-ci.org/sebs/etherscan-api)
-[![GitHub issues](https://img.shields.io/github/issues/sebs/etherscan-api.svg)](https://github.com/sebs/etherscan-api/issues)
-
-A way to access the [etherscan.io api](https://etherscan.io/apis) using promises. Fetch a diverse set of information about the blockchain.
-
-Mainnet
 
 
-```javascript
-var api = require('etherscan-api').init('YourApiKey');
-var balance = api.account.balance('0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae');
-balance.then(function(balanceData){
-  console.log(balanceData);
-});
-```
-## Example in the wild
+# Blockchain API
 
-* [Polymer3 based example](https://github.com/hiherto-elements/test-app)
-
-## For testnet usage
-
-Supported:
-
-* morden
-* ropsten
-* rinkeby
-
-Latest
-
-```javascript
-// apikey, network, timeout
-var api = require('etherscan-api').init('YourApiKey','rinkeby'. '3000');
-```
-
-
-## Install
-
- ```bash
- npm install etherscan-api --save
- ```
-
-
-## API Documentation
-
-[Full Api Docs](https://sebs.github.io/etherscan-api/)
+API Morphose uses to fetch data from Binance Smart Chain, Ethereum and Moonbeam 
 
 
 ## Development workflow
